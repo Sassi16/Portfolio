@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sasidharan N — AI &amp; Data Science Engineer</title>
+<meta name="description" content="Portfolio of Sasidharan N — AI & Data Science undergraduate building explainable, data-driven systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-mark">SN</div>
+  <div class="loader-bar"></div>
+  <div class="loader-txt">LOADING…</div>
+</div>
+
+<div id="progress-wrap"><div id="progress-bar"></div></div>
+<div id="cursor-dot"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar">
+  <div class="wrap nav-inner">
+    <a href="#hero" class="nav-logo"><span class="dot"></span>Sasidharan.N</a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#extracurricular">Beyond</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div id="scrim"></div>
+<nav id="mobile-menu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#extracurricular">Beyond</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <div class="bg-float parallax" style="width:220px;height:220px;background:var(--teal-10);top:12%;left:4%;" data-speed="0.15"></div>
+  <div class="bg-float parallax" style="width:160px;height:160px;background:var(--coral-10);bottom:10%;left:38%;" data-speed="0.25"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-greet" data-reveal="left">Hey, I'm</div>
+      <h1 class="hero-name" data-reveal="up" style="transition-delay:.08s;">Sasidharan N</h1>
+      <p class="hero-desc" data-reveal="up" style="transition-delay:.16s;max-width:560px;font-size:18px;">
+        AI &amp; Data Science undergraduate focused on machine learning, big data and web development — currently exploring how interpretable models can support real decisions, from healthcare to campus life.
+      </p>
+      <div class="hero-actions" data-reveal="up" style="transition-delay:.32s;">
+        <a href="#projects" class="btn btn-primary">View Projects <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-meta" data-reveal="up" style="transition-delay:.4s;">
+        <a href="mailto:sasidharan162005@gmail.com">sasidharan162005@gmail.com</a>
+        <a href="https://github.com/Sassi16" target="_blank" rel="noopener">github.com/Sassi16</a>
+        <a href="https://linkedin.com/in/Sasidharan" target="_blank" rel="noopener">linkedin.com/Sasidharan</a>
+      </div>
+    </div>
+    <div class="hero-visual" data-reveal="right">
+      <div class="photo-frame" id="hero-photo-trigger">
+        <img src="assets/profile.jpg" alt="Sasidharan N">
+        <div class="photo-caption">
+          <span>Sasidharan&nbsp;N</span>
+          <span class="expand">View &#8599;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><span class="stick"></span></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section-pad">
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <div class="eyebrow" data-reveal="up">About</div>
+      <h2 class="section-title" data-reveal="up" style="margin-bottom:24px;">Turning data into decisions that make sense.</h2>
+      <p data-reveal="left">Currently a B.Tech student in Artificial Intelligence and Data Science at Dr. Mahalingam College of Engineering and Technology, Pollachi, I spend most of my time somewhere between a dataset and a codebase — pulling structure out of big data, visualizing it, training models on it, then building the web interfaces that put it in front of people.</p>
+      <p data-reveal="left" style="transition-delay:.1s;">What pulled me toward explainable AI specifically is a simple bias: a prediction without a reason isn't very useful to the person who has to act on it. That's the thread running through my projects. When I'm not deep in coursework, I'm usually testing that idea on a new dataset, chipping away at a campus-facing side project, or on a volleyball court.</p>
+    </div>
+    <div class="about-cards">
+      <div class="about-card" data-reveal="right">
+        <div class="num">01</div>
+        <h4>Data Science &amp; Analytics</h4>
+        <p>Big data, visualization and machine learning — with a focus on models people can actually trust.</p>
+      </div>
+      <div class="about-card" data-reveal="right" style="transition-delay:.1s;">
+        <div class="num">02</div>
+        <h4>Web Development</h4>
+        <p>Frontend, backend and frameworks — shipping the interfaces that put data in front of real users.</p>
+      </div>
+      <div class="about-card" data-reveal="right" style="transition-delay:.2s;">
+        <div class="num">03</div>
+        <h4>7.6 CGPA</h4>
+        <p>Through Semester VI of B.Tech AI &amp; Data Science, 2023–2027.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal="up">Skills</div>
+      <h2 class="section-title" data-reveal="up">What I build with.</h2>
+    </div>
+    <div class="skills-cats">
+      <div class="skill-cat">
+        <h3 data-reveal="up">Programming Languages</h3>
+        <div class="skill-chips">
+          <div class="chip" data-reveal="up"><span class="dot"></span>Java</div>
+          <div class="chip" data-reveal="up" style="transition-delay:.06s;"><span class="dot"></span>Python</div>
+          <div class="chip" data-reveal="up" style="transition-delay:.12s;"><span class="dot"></span>C</div>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3 data-reveal="up">Tools &amp; Data</h3>
+        <div class="skill-chips">
+          <div class="chip" data-reveal="left"><span class="dot"></span>Power BI</div>
+          <div class="chip" data-reveal="right" style="transition-delay:.06s;"><span class="dot"></span>Excel</div>
+          <div class="chip" data-reveal="left" style="transition-delay:.12s;"><span class="dot"></span>MySQL</div>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3 data-reveal="up">Soft Skills</h3>
+        <div class="skill-chips">
+          <div class="chip" data-reveal="up"><span class="dot"></span>Professional Communication</div>
+          <div class="chip" data-reveal="up" style="transition-delay:.06s;"><span class="dot"></span>Analytical &amp; Problem-Solving</div>
+          <div class="chip" data-reveal="up" style="transition-delay:.12s;"><span class="dot"></span>Team Collaboration</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal="up">Projects</div>
+      <h2 class="section-title" data-reveal="up">Things I've actually built.</h2>
+    </div>
+
+    <div class="project-card" data-reveal="left">
+      <div class="project-visual">
+        <svg viewBox="0 0 200 200" fill="none">
+          <circle cx="100" cy="100" r="70" stroke="#3E6E4F" stroke-width="2" stroke-dasharray="6 6"/>
+          <path d="M50 120 L80 90 L100 130 L120 70 L150 100" stroke="#B5562F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="80" cy="90" r="5" fill="#3E6E4F"/>
+          <circle cx="120" cy="70" r="5" fill="#C98A3B"/>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-date">AUGUST 2025</div>
+        <h3>CKD Diagnosis and Prognosis</h3>
+        <p>An AI-based system that detects Chronic Kidney Disease early from patient medical data using XGBoost, with explainable AI techniques layered in so predictions come with clear, interpretable reasoning that supports better healthcare decisions.</p>
+        <div class="tech-badges">
+          <span class="badge">Python</span>
+          <span class="badge">XGBoost</span>
+          <span class="badge">Explainable AI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sassi16" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card" data-reveal="right">
+      <div class="project-visual">
+        <svg viewBox="0 0 200 200" fill="none">
+          <rect x="55" y="55" width="90" height="90" rx="16" stroke="#3E6E4F" stroke-width="2"/>
+          <circle cx="100" cy="100" r="24" stroke="#B5562F" stroke-width="2"/>
+          <circle cx="100" cy="100" r="4" fill="#C98A3B"/>
+          <path d="M100 76 V60 M100 140 V124 M76 100 H60 M140 100 H124" stroke="#2C5038" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-date">MAY 2026</div>
+        <h3>Campus Finder</h3>
+        <p>An AI-powered lost &amp; found platform for university campuses. Students can instantly report missing items, browse a live registry of found goods, and use intelligent search to reconnect with their belongings.</p>
+        <div class="tech-badges">
+          <span class="badge">AI Search</span>
+          <span class="badge">Web App</span>
+          <span class="badge">MySQL</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sassi16" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE + CERTS ============ -->
+<section id="experience" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal="up">Experience</div>
+      <h2 class="section-title" data-reveal="up">Where I've worked and learned.</h2>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card" data-reveal="left">
+        <div class="role">Software Department Intern</div>
+        <div class="org">Litz Tech, Coimbatore — June 2025</div>
+        <ul>
+          <li>Assisted in the daily operations of the software department.</li>
+          <li>Participated in team meetings and idea-sharing sessions.</li>
+        </ul>
+      </div>
+      <div class="exp-card" data-reveal="right">
+        <div class="role">Certifications</div>
+        <div class="org">Ongoing learning</div>
+        <div class="cert-list">
+          <div class="cert-item"><span>Certified workshop — Artificial Intelligence &amp; Data Science</span><span>Feb 2025</span></div>
+          <div class="cert-item" style="border-bottom:none;padding-bottom:0;"><span>Python Libraries for Data Science</span><span>Oct 2025</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal="up">Education</div>
+      <h2 class="section-title" data-reveal="up">The path so far.</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <div class="timeline-line-fill" id="tl-fill"></div>
+
+      <div class="tl-item" data-reveal="up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-period">2020 – 2021</div>
+          <h4>SSLC</h4>
+          <div class="tl-org">RKR Gnanodhaya Matric Higher Secondary School, Kodingiam</div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-reveal="up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-period">2022 – 2023 · 79%</div>
+          <h4>HSC</h4>
+          <div class="tl-org">RKR Gnanodhaya Matric Higher Secondary School, Kodingiam</div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-reveal="up">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-period">2023 – 2027 · CGPA 7.6 (till Sem VI)</div>
+          <h4>B.Tech — Artificial Intelligence &amp; Data Science</h4>
+          <div class="tl-org">Dr. Mahalingam College of Engineering and Technology, Pollachi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section id="achievements" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal="up">Achievements</div>
+      <h2 class="section-title" data-reveal="up">A few highlights.</h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card" data-reveal="up">
+        <div class="ach-icon">🏆</div>
+        <h4>II Prize — Project Presentation</h4>
+        <p>Awarded at Solaris, the technical symposium hosted by SECT, for presenting an applied AI project.</p>
+      </div>
+      <div class="ach-card" data-reveal="up" style="transition-delay:.12s;">
+        <div class="ach-icon">⚡</div>
+        <h4>Smart India Hackathon</h4>
+        <p>Participated in India's national-level hackathon, building a solution under real time constraints alongside a team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXTRACURRICULAR ============ -->
+<section id="extracurricular" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-reveal="up">Beyond the Classroom</div>
+      <h2 class="section-title" data-reveal="up">Off the clock.</h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card" data-reveal="up">
+        <div class="ach-icon">🤝</div>
+        <h4>NSS Volunteer</h4>
+        <p>Engaged in social service activities as part of the National Service Scheme, contributing time to community-facing initiatives.</p>
+      </div>
+      <div class="ach-card" data-reveal="up" style="transition-delay:.12s;">
+        <div class="ach-icon">🏐</div>
+        <h4>Zone Volleyball Tournament</h4>
+        <p>Competed in the zone-level volleyball tournament (2023–2024), representing the college on court.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section-pad">
+  <div class="wrap">
+    <div class="contact-head">
+      <div class="eyebrow" data-reveal="up" style="justify-content:center;">Contact</div>
+      <h2 data-reveal="up">Let's Build Something<br>Meaningful Together</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal="left">
+        <div class="c-item">
+          <div class="ic">@</div>
+          <div><div class="lbl">Email</div><div class="val">sasidharan162005@gmail.com</div></div>
+        </div>
+        <div class="c-item">
+          <div class="ic">#</div>
+          <div><div class="lbl">Phone</div><div class="val">+91 6383261041</div></div>
+        </div>
+        <div class="c-item">
+          <div class="ic">in</div>
+          <div><div class="lbl">LinkedIn</div><div class="val">linkedin.com/Sasidharan</div></div>
+        </div>
+        <div class="c-item">
+          <div class="ic">gh</div>
+          <div><div class="lbl">GitHub</div><div class="val">github.com/Sassi16</div></div>
+        </div>
+      </div>
+      <form id="contact-form" class="contact-form" data-reveal="right" name="contact" method="POST" data-netlify="true" netlify-honeypot="company">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="position:absolute;left:-9999px;">
+          <label>Don't fill this out if you're human: <input name="company" tabindex="-1" autocomplete="off"></label>
+        </p>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="What would you like to build?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="contact-submit" style="align-self:flex-start;">Send Message <span class="arrow">→</span></button>
+        <p id="contact-status" style="font-family:var(--font-mono);font-size:13px;display:none;"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 Sasidharan N. Built with intent.</span>
+    <span>Coimbatore, India</span>
+  </div>
+</footer>
+
+<div id="lightbox">
+  <div id="lightbox-close" aria-label="Close">&times;</div>
+  <img id="lightbox-img" src="" alt="Sasidharan N — enlarged photo">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
